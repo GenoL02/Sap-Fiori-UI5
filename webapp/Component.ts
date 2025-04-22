@@ -1,6 +1,7 @@
 import UIComponent from "sap/ui/core/UIComponent";
 import JSONModel from "sap/ui/model/json/JSONModel";
 import Device from "sap/ui/Device";
+import Currency from "sap/ui/unified/Currency";
 
 /**
  * @namespace ui5.walkthrough
@@ -19,6 +20,7 @@ export default class Component extends UIComponent {
       recipient: {
         name: "World",
       },
+      currency: "VND",
     };
     const model = new JSONModel(data);
     this.setModel(model);
